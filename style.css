@@ -1,0 +1,172 @@
+html {
+  margin: 0;
+  box-sizing: border-box;
+  font-size: 18px;
+  font-family: "Hanken Grotesk", sans-serif;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+}
+
+/* --Globales-- */
+:root {
+  --Light_slate_blue: hsl(252, 100%, 67%);
+  --Light_royal_blue: hsl(241, 81%, 54%);
+  --Violet_blue: hsla(256, 72%, 46%, 1);
+  --Persian_blue: hsla(241, 72%, 46%, 0);
+  --light_red: hsl(0, 100%, 67%);
+  --orangey_yellow: hsl(39, 100%, 56%);
+  --green_teal: hsl(166, 100%, 37%);
+  --cobalt_blue: hsl(234, 85%, 45%);
+}
+
+/* - Mobile: 375px
+- Desktop: 1440px */
+
+body{
+  background-color: rgb(229, 231, 231);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 90vh; /* Ajusta la altura al 100% del viewport */
+    margin: 0; /* Elimina el margen predeterminado del body */
+  
+}
+
+.contenedor {
+  max-width: 1040px;
+  
+  border-radius: 0 0 1.5rem 1.5rem;
+}
+
+@media (min-width: 768px) {
+  .contenedor {
+    max-width: 1040px;
+    margin: 2rem auto;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    justify-content: center;
+    background-color: aliceblue;
+    border-radius: 1.5rem;
+  }
+}
+
+/* CardBlue */
+.cardBlue {
+  min-width: 50%;
+  background-image: linear-gradient(
+    var(--Light_slate_blue),
+    var(--Light_royal_blue)
+  );
+  border-radius: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: aliceblue;
+  text-align: center;
+}
+
+.cardBlue__subtittle {
+  margin: 1.5rem 0;
+}
+
+.circle{
+  width: 13rem;
+    height: 13rem;
+    background-image: linear-gradient(var(--Violet_blue), var(--Persian_blue));
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+@media (min-width: 768px) {
+  .circle {
+    margin: 2rem 0;
+  }
+}
+
+.circle--title {
+  font-size: 4rem;
+}
+
+.cardBlue_tittle {
+  margin: 1rem 0;
+}
+
+.cardBlue__texto {
+  width: 50%;
+  margin: 1rem 0;
+}
+
+.cardWhite {
+  min-width: 50%;
+  padding: 0.5rem 3rem;
+  border-radius: 0 1.5rem 1.5rem 0;
+}
+
+.cardEnlaces {
+}
+
+.cardEnlaces__enlace {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+@media (min-width: 768px) {
+  .cardEnlaces__enlace {
+    margin: 3rem 0;
+    font-size: 1.5rem;
+
+  }
+}
+
+.text {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+}
+
+.img {
+  width: 3rem;
+  padding-right: 1rem;
+}
+
+.carsEnlaces__medida {
+  display: flex;
+  margin-left: 3rem;
+}
+
+.cardWhite__btn {
+  width: 100%;
+  border-radius: 2rem;
+  border: none;
+  padding: 1rem;
+  background-color: var(--Light_royal_blue);
+}
+
+.attribution{
+  width: 100%;
+  background-color: var(--green_teal);
+  text-align: center;
+  position: absolute;
+  bottom: 0;
+}
+
+.attribution >*{
+  text-decoration: none;
+
+}
